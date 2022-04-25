@@ -11,7 +11,7 @@ struct pris {
 	short check;
 };
 
-void main () {
+int main () {
 
 	int i, j, k, n, t, twtime = 0, ttatime;
 	printf ("SJF SCHEDULING\n\nEnter the no. of processes -> ");
@@ -88,4 +88,5 @@ void main () {
 		printf ("P%d\t%d\t%d\t%d\t%d\t%d\n", p[q[i]].pid, p[q[i]].atime, p[q[i]].btime, p[q[i]].ctime, p[q[i]].tatime, p[q[i]].wtime);
 	printf("\nAverage turn around time: %f\n", (float)ttatime/n);
     printf("Average waiting time: %f\n\n", (float)twtime/n);
+    return 0;
 }
